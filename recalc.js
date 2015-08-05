@@ -1,5 +1,8 @@
 window.onload = function () {
     var inputEl = document.getElementById('input');
+    if (window.location.hash.length) {
+        inputEl.value = window.location.hash;
+    }
     var outputEl = document.getElementById('output');
 
     var oldValue = null;
